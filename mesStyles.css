@@ -1,0 +1,21 @@
+a:hover{
+    font-weight: bold;
+    color: red;
+    border-bottom: solid 20px;
+    transition: all 2s;
+}
+iframe{
+    border: none;
+     width: 80%;
+     height: 80%;
+     margin-top: 50px;
+ 
+ 
+ }
+ section{
+    
+    width: 68%;
+    height: 630px;
+    background-color: cornsilk;
+    text-align: center;
+}

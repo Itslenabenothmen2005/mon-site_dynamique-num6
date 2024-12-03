@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enregistrement</title>
+    <link rel="stylesheet" href="mesStyles.css" >
+    <script src="controle.js"></script>
+
+</head>
+<body>
+    <form  action="sandage.php" method="post" onsubmit=" return test()" >
+        <fieldset>
+            <legend>Sondage</legend>
+            <h2>Authentification/Inscription :</h2></td>
+            <table>
+                
+                <tr>               
+                    <td><label>@Mail :</label></td>
+                    <td><input type="email" id="mail" name="mail"></td>
+                </tr>
+                
+                <tr>
+                    <td><label>Mot de Passe :</label></td>
+                    <td><input type="password" id="mp" name="mp" ></td>
+                </tr>
+                <tr>
+                    <td><label>Genre :</label></td>
+                    <td>
+                        <select id="genre" name="genre" >
+                            <option >Indiquer votre genre</option>
+                            <option value="M" >Masculin</option>
+                            <option value="F">Feminin</option>
+                         </select>
+                            
+                    </td>
+                </tr>
+                </table>
+                            
+                    <h2>Les réseaux sociaux :</h2>
+                    
+                <table>
+                <tr>               
+                    <th>N°</th>
+                    <th>Question/Affirmation</th>
+                    <th width=70 align="left">Oui</th>
+                    <th width=70 align="left">Non</th>
+                    <th width=70 align="left">Sans avis</th>
+                </tr>
+                <tr>               
+                    <td><h3>1</h3></td>
+                    <td>Les informations partagées sur les réseaux sociaux sont fiables</td>
+                    <td><input type="radio" name="q1" id="b1q1"value="O"></td>
+                    <td><input type="radio" name="q1" id="b2q1"value="N"></td>
+                    <td><input type="radio" name="q1" id="b3q1"value="S" ></td>
+                </tr>
+                <tr>               
+                    <td><h3 >2</h3></td>
+                    <td>L'usage des réseaux sociaux pour les enfants doit etre sous le controle parentale</td>
+                    <td><input type="radio" name="q2" id="b1q2"value="O"></td>
+                    <td ><input type="radio" name="q2" id="b2q2"value="N"></td>
+                    <td><input type="radio" name="q2" id="b3q2"value="S" ></td>
+                </tr>
+                <tr>               
+                    <td><h3>3</h3></td>
+                    <td>Les réseaux sociaux deviennent une nécessité pour les citoyens</td>
+                    <td><input type="radio" name="q3" id="b1q3"value="O"></td>
+                    <td><input type="radio" name="q3" id="b2q3"value="N"></td>
+                    <td><input type="radio" name="q3" id="b3q3"value="S" ></td>
+                </tr>
+               
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><input type="reset" value="Annuler"></td>
+                    <td width=20></td>
+                    <td><input type="submit" value="Envoyer"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
